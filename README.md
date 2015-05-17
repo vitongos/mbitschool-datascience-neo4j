@@ -11,7 +11,7 @@ Ejecutar el siguiente script:
 ```bash
 sudo yum -y install git
 cd
-git clone https://github.com/vitongos/mbitschool-bigdata-neo4j.git neo4j-src
+git clone https://github.com/vitongos/mbitschool-datascience-neo4j.git neo4j-src
 chmod +x neo4j-src/deploy/*.sh
 ```
 
