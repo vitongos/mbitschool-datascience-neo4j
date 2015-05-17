@@ -2,7 +2,7 @@
 
 USR=`whoami`
 cd
-wget https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz
+wget http://mirror.ibcp.fr/pub/eclipse//technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz
 sudo mv eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz /opt/
 cd /opt
 sudo tar xzf eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz
