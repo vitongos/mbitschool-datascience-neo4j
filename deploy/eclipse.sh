@@ -1,11 +1,12 @@
 #!/bin/bash
 
+USR=`whoami`
 cd
-wget http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/technology/epp/downloads/release/luna/SR1/eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz
-sudo mv eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz /opt/
+wget https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz
+sudo mv eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz /opt/
 cd /opt
-sudo tar xzf eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz
-sudo chown cloudera:cloudera eclipse -R
+sudo tar xzf eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz
+sudo chown $USR:$USR eclipse -R
 sudo ln -s /opt/eclipse/eclipse /usr/bin/eclipse
 
 
