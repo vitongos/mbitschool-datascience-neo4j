@@ -61,6 +61,7 @@ public class RestApi01
                         + System.getProperty( "line.separator" ) + "%s",
                 jsonTraverserPayload, traverserUri, response.getStatus(),
                 response.getEntity( String.class ) ) );
+        System.out.println();
         response.close();
         // END SNIPPET: traverse
     }
@@ -81,6 +82,7 @@ public class RestApi01
         System.out.println( String.format(
                 "PUT [%s] to [%s], status code [%d]", entity, propertyUri,
                 response.getStatus() ) );
+        System.out.println();
         response.close();
     }
 
@@ -109,7 +111,8 @@ public class RestApi01
         final URI location = response.getLocation();
         System.out.println( String.format(
                 "POST to [%s], status code [%d], location header [%s]",
-                nodeEntryPointUri, response.getStatus(), location.toString() ) );
+                nodeEntryPointUri, response.getStatus(), (location!=null)?location.toString():"" ) );
+        System.out.println();
         response.close();
 
         return location;
@@ -138,6 +141,7 @@ public class RestApi01
                 "POST to [%s], status code [%d], location header [%s]",
                 fromUri, response.getStatus(), location.toString() ) );
 
+        System.out.println();
         response.close();
         return location;
     }
@@ -190,6 +194,7 @@ public class RestApi01
 
         System.out.println( String.format( "PUT to [%s], status code [%d]",
                 propertyUri, response.getStatus() ) );
+        System.out.println();
         response.close();
         // END SNIPPET: addProp
     }
@@ -203,6 +208,7 @@ public class RestApi01
 
         System.out.println( String.format( "GET on [%s], status code [%d]",
                 SERVER_ROOT_URI, response.getStatus() ) );
+        System.out.println();
         response.close();
         // END SNIPPET: checkServer
     }
